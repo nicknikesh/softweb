@@ -1,7 +1,8 @@
+PEOPLE
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASTROGLOW SOFTWARE DEVELOPEMENT COMPANY</title>
+    <title>council page</title>
     <style type="text/css">
       * {
         margin: 0;
@@ -12,10 +13,10 @@
         width: 100%;
         height: 95vh;
         background-image: linear-gradient(
-            rgba(9, 2, 2, 0.75),
+            rgba(0, 0, 0, 0.75),
             rgba(0, 0, 0, 0.75)
           ),
-          url( nikesh\ web\ background.jpeg );
+          url(nikesh\ web\ background.jpeg);
         background-size: cover;
         background-position: center;
       }
@@ -27,14 +28,21 @@
         align-items: center;
         justify-content: space-between;
       }
+      .bg-people {
+        border: 1px;
+        padding: 10px;
+        color: white;
+        background-color: rgb(22, 183, 211);
+        border-radius: 30px;
+      }
       .logo {
-        color: #770bfb;
+        color: #4306d0;
         font-size: 40px;
         font-weight: 700;
         letter-spacing: 3px;
       }
       span {
-        color: rgb(24, 150, 196);
+        color: white;
       }
       form {
         width: 300px;
@@ -53,7 +61,7 @@
         outline: none;
         padding: 12px 20px;
         font-size: 15px;
-        color: rgb(11, 109, 154);
+        color: white;
       }
       ::placeholder {
         color: white;
@@ -64,19 +72,8 @@
         padding: 5px 20px;
         color: white;
         border-radius: 10px;
-        background: #00d5ff;
+        background:rgb(0, 255, 255);
         cursor: pointer;
-      }
-      #search.hover {
-        border: 1px;
-        padding: 10px;
-
-        transition: 0.5s;
-        cursor: pointer;
-        border-radius: 30px;
-        background: #0ef;
-        color: #081b29;
-        box-shadow: 0 0 20px #0ef;
       }
       .navbar li {
         list-style: none;
@@ -96,65 +93,35 @@
         transition: 0.5s;
         cursor: pointer;
         border-radius: 30px;
-        background: rgb(26, 219, 226);
+        background: rgb(0, 204, 255);
         color: #081b29;
-        box-shadow: 0 0 20px rgb(0, 238, 255);
+        box-shadow: 0 0 20px rgb(0, 213, 255);
       }
-      .content {
-        color: rgb(17, 206, 223);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
+      .image {
+        position: relative;
+        border: 0;
+        top: 150px;
+
+        background: transparent;
       }
-      .text h2 {
-        color: rgb(219, 189, 15);
-        font-weight: 800;
-        font-size: 50px;
-        letter-spacing: 3px;
-      }
-      .text p {
-        color: rgb(18, 214, 218);
-        text-transform: capitalize;
-        font-size: 15px;
-        margin-bottom: 30px;
-        word-spacing: 2px;
-        letter-spacing: 1px;
-      }
-      .login {
-        margin: 0px 10px;
-        border: 2px solid red;
-        padding: 13px 35px;
-        letter-spacing: 1px;
+      .image table {
+        border: 0;
         color: white;
-        border-radius: 30px;
-        background-color: red;
-        text-decoration: none;
+        position: relative;
+        left: 200px;
+        border: 10PX;
+        padding-left: 10px;
+      
       }
-      .login:hover {
-        border: 2px solid red;
-        color: red;
-        background-color: white;
-        transition: 0.5s;
-        cursor: pointer;
+      .image table img {
+        height: 140px;
+        width: 140px;
+        border: 2px solid white;
+        padding: 5px;
+        border-radius: 50%;
       }
-      .signup {
-        margin: 0px 10px;
-        border: 2px solid green;
-        padding: 13px 35px;
-        letter-spacing: 1px;
-        color: white;
-        border-radius: 30px;
-        background-color: green;
-        text-decoration: none;
-      }
-      .signup:hover {
-        border: 2px solid green;
-        color: green;
-        background-color: white;
-        transition: 0.5s;
-        cursor: pointer;
+      .image table td {
+        color:rgb(0, 208, 255);
       }
       footer {
         border: 1px;
@@ -163,9 +130,12 @@
         transition: 0.5s;
         cursor: pointer;
         border-radius: 30px;
-        background: rgb(0, 242, 255);
+        background: rgb(0, 208, 255);
         color: #081b29;
-        box-shadow: 0 0 20px rgb(0, 255, 251);
+        box-shadow: 0 0 20px rgb(0, 242, 255);
+      }
+      .space{
+        padding-left: 30px;
       }
     </style>
   </head>
@@ -177,27 +147,41 @@
         <ul>
           <li><a href="home.html"> Home </a></li>
           <li><a href="products.html"> Products </a></li>
-          <li><a href="council.html"> council </a></li>
-          <li><a href="contact_us.html"> Contact_us </a></li>
+          <li><a href="people.html" class="bg-people"> People </a></li>
+          <li><a href="contact_us.html"> Contact </a></li>
         </ul>
         <form action="" method="get">
           <input type="text" placeholder="Enter to Search" />
-          <button id="search" type="submit">Search</button>
+          <button type="submit">Search</button>
         </form>
       </div>
-      <div class="content">
-        <div class="text">
-          <h2>
-            "Integrating the virtual assistant with popular business tools such as customer relationship management (CRM) systems" 
-          </h2>
-          <br />
-
-          <br />
-          <div>
-            <a href="#" class="login"> Log In </a>
-            <a href="#" class="signup"> Sign Up </a>
-          </div>
-        </div>
+      <div class="image">
+        <table cellspacing="80" >
+          <tr align="center">
+            <td><img src="nikesh kumar profile.jpg" /></td>
+            <td><img src="ms 1.jpeg" /></td>
+            <td><img src="sr 2.jpeg " /></td>
+            <td><img src="rg 3.jpeg" /></td>
+            <td><img src="sd 4.jpeg" /></td>
+            <td><img src="rj 5.jpeg " /></td>
+          </tr>
+          <tr align="center" class="space">
+            <th>NIKESHKUMAR C</th>
+            <th>M.S.DHONI</th>
+            <th>SURESH RAINA</th>
+            <th>RUTURAJ GAIKWAD</th>
+            <th>SHIVAM DUBE</th>
+            <th>RAVINDRA JADEJA</th>
+          </tr>
+          <tr align="center">
+            <td>CEO</td>
+            <td>CEO,Co-Founder</td>
+            <td>CTO,Co-Founder</td>
+            <td>DIRECTOR</td>
+            <td>Asst.Director</td>
+            <td>Dy.Director</td>
+          </tr>
+        </table>
       </div>
     </div>
     <footer>
